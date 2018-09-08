@@ -124,8 +124,7 @@ KUINT16 KDataStream::CopyIntoBuffer(KOCTET *Buffer, KUINT16 BufferSize, KUINT16 
 
 //////////////////////////////////////////////////////////////////////////
 
-void KDataStream::CopyFromBuffer(const KOCTET *SerialData, KUINT16 DataSize, Endian NetworkEndian) {
-    NetworkEndian = NetworkEndian;
+void KDataStream::CopyFromBuffer(const KOCTET *SerialData, KUINT16 DataSize, Endian /*NetworkEndian*/) {
 
     // Copy Data into vector
     for( KUINT16 i = 0; i < DataSize; ++i )
