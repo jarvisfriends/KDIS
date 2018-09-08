@@ -242,7 +242,6 @@ KString Header7::GetAsString() const
             m_ui8PDUType == Fire_PDU_Type                       ||
             m_ui8PDUType == Designator_PDU_Type                 ||
             m_ui8PDUType == Electromagnetic_Emission_PDU_Type   ||
-            m_ui8PDUType == Designator_PDU_Type                 ||
             m_ui8PDUType == Transmitter_PDU_Type                ||
             m_ui8PDUType == Signal_PDU_Type                     ||
             m_ui8PDUType == Receiver_PDU_Type                   ||
