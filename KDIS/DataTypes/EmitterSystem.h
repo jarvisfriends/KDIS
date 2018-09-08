@@ -113,7 +113,7 @@ public:
     // Description: Convert To Network Data.
     // Parameter:   KDataStream & stream
     //************************************
-    virtual KDataStream Encode() const;
+    KDataStream Encode() const override;
 
     void Encode(KDataStream &stream) const override;
 

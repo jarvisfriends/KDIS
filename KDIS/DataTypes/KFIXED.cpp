@@ -29,8 +29,8 @@ http://p.sf.net/kdis/UserGuide
 
 #include "./KFIXED.h"
 
-using namespace KDIS;
-using namespace DATA_TYPE;
+namespace KDIS{
+namespace DATA_TYPE{
 
 /**
  *  [n].[m] digit fixed point binary number:
@@ -325,3 +325,5 @@ KFIXED<Type, BinaryPoint>::operator Type () const
 template class KFIXED<KINT16, 3>;
 template class KFIXED<KINT16, 8>;
 template class KFIXED<KINT8, 3>;
+}
+}
