@@ -1,8 +1,11 @@
 
 ## Linux: [![Build Status](https://travis-ci.org/jarvisfriends/KDIS.svg?branch=master)](https://travis-ci.org/jarvisfriends/KDIS)
+### Bugs ![Analysis](https://sonarcloud.io/api/project_badges/measure?project=jarvisfriends_kdis&metric=bugs)
+### Security ![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jarvisfriends_kdis&metric=security_rating)
+### Vulnerabilities ![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jarvisfriends_kdis&metric=vulnerabilities)
 
 
-# This is a fork of kdis. T
+# This is a fork of kdis. 
 The active project is @ https://sourceforge.net/projects/kdis/
 
 Hi,
