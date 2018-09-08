@@ -99,14 +99,14 @@ public:
     // FullName:    KDIS::DATA_TYPE::Descriptor::GetAsString
     // Description: Returns a string representation.
     //************************************
-    virtual KString GetAsString() const;
+    KString GetAsString() const override;
 
     //************************************
     // FullName:    KDIS::DATA_TYPE::Descriptor::Decode
     // Description: Convert From Network Data.
     // Parameter:   KDataStream & stream
     //************************************
-    virtual void Decode(KDataStream &stream) noexcept(false);
+    void Decode(KDataStream &stream) noexcept(false) override;
 
     //************************************
     // FullName:    KDIS::DATA_TYPE::Descriptor::Encode
