@@ -1,3 +1,10 @@
+
+## Linux: [![Build Status](https://travis-ci.org/jarvisfriends/KDIS.svg?branch=master)](https://travis-ci.org/jarvisfriends/KDIS)
+
+
+# This is a fork of kdis. T
+The active project is @ https://sourceforge.net/projects/kdis/
+
 Hi,
 
 Thanks for downloading KDIS.
