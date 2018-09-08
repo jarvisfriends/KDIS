@@ -8,11 +8,11 @@ PROJECT(KDIS)
 
 OPTION(BUILD_EXAMPLES_TO_LINK_TO_LIB "Build the examples so they link against a Lib version of KDIS instead of including the whole source for each example" ON)
 SET(EXAMPLES_USE_STATIC_OR_SHARED_LIB STATIC CACHE STRING "If BUILD_EXAMPLES_TO_LINK_TO_LIB is ON then do you want to build against a STATIC library or a SHARED library(dll)")
-SET(DIS_VERSION 7 CACHE STRING "The version of DIS to use. IEEE 1278.1-1995(5), IEEE 1278.1A-1998(6) or IEEE 1278.1x-2012(7). This parameter will decide what files should be included in the example projects.")
+SET(DIS_VERSION 7 CACHE STRING "The version of DIS to use. IEEE 1278.1-1995(5), IEEE 1278.1A-1998(6) or IEEE 1278.1x-2012(7). This parameter will decide what files should be included in the example projects." )
 OPTION(KDIS_USE_ENUM_DESCRIPTORS "Use enumeration descriptors. These allow enum values to be turned into their text labels. This increase the memory footprint of your application so do not enable if you do not plan to use." ON)
 OPTION(BUILD_EXAMPLES "Create example projects" ON)
 OPTION(USE_SOLUTION_FOLDERS "Organise all projects into folders in your solution. At the moment this feature seems to be Visual Studio Professional(Not Express) only." ON)
-OPTION(BUILD_TESTS "Build the KDIS unit tests. Uses the google test framework.")
+OPTION(BUILD_TESTS "Build the KDIS unit tests. Uses the google test framework." ON)
 
 IF(NOT DIS_VERSION MATCHES 5 AND NOT DIS_VERSION GREATER 5 AND NOT DIS_VERSION GREATER 6)
 MESSAGE(FATAL_ERROR "Invalid DIS version, only 5, 6 and 7 are supported")
