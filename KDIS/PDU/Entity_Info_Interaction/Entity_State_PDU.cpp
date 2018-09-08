@@ -586,7 +586,7 @@ void Entity_State_PDU::Encode( KDataStream & stream ) const
 
 Entity_State_PDU & Entity_State_PDU::operator=( const Entity_State_PDU & Other )
 {
-    if(Other != *this) {
+    if(this != &Other) {
         Header::operator=(Other);
         m_EntityID = Other.m_EntityID;
         m_ui8ForceID = Other.m_ui8ForceID;
