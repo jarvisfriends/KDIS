@@ -1,0 +1,31 @@
+os: linux
+dist: trusty
+sudo: false
+cache:
+  ccache: true
+group: stable
+addons:
+  apt:
+    packages:
+      - ninja-build
+      - cmake
+      - g++-7
+    sources:
+      - ubuntu-toolchain-r-test
+  sonarcloud:
+    organization: jarvisfriends
+env:
+  - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
+before_install:
+  - eval "${MATRIX_EVAL}"
+script:
+  - mkdir -p build && cd build
+  - cmake -GNinja ..
+  - ninja
+  - cd ..
+  - mkdir -p build_sonar_scanner && cd build_sonar_scanner
+  - cmake -GNinja ..
+  - build-wrapper-linux-x86-64 --out-dir ../bw-output/ 'ninja'
+  - cd ..
+  - sonar-scanner
+language: c++
