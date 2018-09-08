@@ -1,5 +1,5 @@
 
-Linux: [![Build Status](https://travis-ci.org/jarvisfriends/KDIS.svg?branch=master)](https://travis-ci.org/jarvisfriends/KDIS)
+##Linux: [![Build Status](https://travis-ci.org/jarvisfriends/KDIS.svg?branch=master)](https://travis-ci.org/jarvisfriends/KDIS)
 
 
 # This is a fork of kdis. T
