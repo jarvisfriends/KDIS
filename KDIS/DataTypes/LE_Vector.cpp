@@ -29,8 +29,8 @@ http://p.sf.net/kdis/UserGuide
 
 #include "./LE_Vector.h"
 
-using namespace KDIS;
-using namespace DATA_TYPE;
+namespace KDIS{
+namespace DATA_TYPE{
 
 //////////////////////////////////////////////////////////////////////////
 // Public:
@@ -298,3 +298,5 @@ const Type &LE_Vector<Type>::operator[](KUINT16 i) const noexcept(false)
 template class LE_Vector<KFIXED16_3>;
 template class LE_Vector<KFIXED8_3>;
 
+}
+}

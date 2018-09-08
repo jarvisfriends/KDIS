@@ -107,7 +107,7 @@ public:
     // FullName:    KDIS::DATA_TYPE::LE_EulerAngles::GetAsString
     // Description: Returns a string representation.
     //************************************
-    virtual KString GetAsString() const;
+    KString GetAsString() const override;
 
     //************************************
     // FullName:    KDIS::DATA_TYPE::LE_EulerAngles::Decode
@@ -121,7 +121,7 @@ public:
     // Description: Convert To Network Data.
     // Parameter:   KDataStream & stream
     //************************************
-    virtual KDataStream Encode() const;
+    KDataStream Encode() const override;
 
     void Encode(KDataStream &stream) const override;
 

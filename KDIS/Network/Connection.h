@@ -70,9 +70,9 @@ class KDIS_EXPORT Connection
 {
 protected:
 
-    KINT32 m_iSocket[2]; // 1 for sending & 1 for receiving.
+    int32_t m_iSocket[2]; // 1 for sending & 1 for receiving.
 
-    KUINT32 m_uiPort;
+    uint32_t m_uiPort;
 
     timeval m_blockingTimeout;
 

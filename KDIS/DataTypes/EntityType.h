@@ -156,22 +156,22 @@ public:
     // FullName:    KDIS::DATA_TYPE::EntityType::GetAsString
     // Description: Returns a string representation.
     //************************************
-    virtual KString GetAsString() const;
+    KString GetAsString() const override;
 
     //************************************
     // FullName:    KDIS::DATA_TYPE::EntityType::Decode
     // Description: Convert From Network Data.
     // Parameter:   KDataStream & stream
     //************************************
-    virtual void Decode(KDataStream &stream) noexcept(false);
+    void Decode(KDataStream &stream) noexcept(false) override;
 
     //************************************
     // FullName:    KDIS::DATA_TYPE::EntityType::Encode
     // Description: Convert To Network Data.
     // Parameter:   KDataStream & stream
     //************************************
-    virtual KDataStream Encode() const;
-    virtual void Encode( KDataStream & stream ) const;
+    KDataStream Encode() const override;
+    void Encode( KDataStream & stream ) const override;
 
     KBOOL operator == ( const EntityType & Value ) const;
     KBOOL operator != ( const EntityType & Value ) const;
